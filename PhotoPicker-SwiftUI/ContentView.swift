@@ -6,16 +6,36 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct ContentView: View {
+    
+    @StateObject var imageData = ImageData()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                switch imageData.imageState {
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFit()
+                case .loading:
+                    ProgressView()
+                case .empty:
+                    Image(systemName: "heart")
+                case .failure:
+                    Image(systemName: "exclamationmark.triangle.fill")
+                }
+            }
+            .navigationTitle("PhotoPicker")
+            .toolbar {
+                PhotosPicker(selection: $imageData.selectedImage, matching: .images) {
+                    Image(systemName: "plus")
+                }
+
+            }
         }
-        .padding()
     }
 }
 
