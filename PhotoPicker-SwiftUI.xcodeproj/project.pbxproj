@@ -12,6 +12,7 @@
 		62127B0B2B42E5E1008D2656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62127B0A2B42E5E1008D2656 /* Assets.xcassets */; };
 		62127B0E2B42E5E1008D2656 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62127B0D2B42E5E1008D2656 /* Preview Assets.xcassets */; };
 		62127B172B42F937008D2656 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62127B162B42F937008D2656 /* ImageData.swift */; };
+		62127B192B43B72A008D2656 /* SelectMultiplePhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62127B182B43B72A008D2656 /* SelectMultiplePhotos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		62127B0A2B42E5E1008D2656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62127B0D2B42E5E1008D2656 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		62127B162B42F937008D2656 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		62127B182B43B72A008D2656 /* SelectMultiplePhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMultiplePhotos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				62127B062B42E5E1008D2656 /* PhotoPicker_SwiftUIApp.swift */,
 				62127B082B42E5E1008D2656 /* ContentView.swift */,
 				62127B162B42F937008D2656 /* ImageData.swift */,
+				62127B182B43B72A008D2656 /* SelectMultiplePhotos.swift */,
 				62127B0A2B42E5E1008D2656 /* Assets.xcassets */,
 				62127B0C2B42E5E1008D2656 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				62127B092B42E5E1008D2656 /* ContentView.swift in Sources */,
 				62127B072B42E5E1008D2656 /* PhotoPicker_SwiftUIApp.swift in Sources */,
+				62127B192B43B72A008D2656 /* SelectMultiplePhotos.swift in Sources */,
 				62127B172B42F937008D2656 /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
